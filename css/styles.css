@@ -1,0 +1,175 @@
+.container{
+	display: flex;
+  	flex-wrap: wrap;
+}
+
+img{
+	width:100%;
+}
+
+h1,h3{
+	margin:0;
+	padding: 0;
+}
+
+h2{
+	text-align: center;
+}
+
+[class*="zocial-"]:before {
+  color: white;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+
+figcaption{
+	text-align: center;
+	font-weight: bold;
+	font-size:1.5em;
+	margin-bottom: 0em;
+}
+
+footer {
+  margin: 0 auto;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  margin-top: 5em;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+}
+
+#social{
+	margin-top:0.25em;
+}
+
+a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}
+header{
+	width:100%;
+}
+.header_logo{
+	height: 72px;
+  	float: left;
+}
+
+.header_title{
+	margin-top: 3em;
+	margin-bottom: 3em;
+	margin-right: 5em;
+}
+
+hr{
+	width:100%;
+	height: 0.5em;
+	border:none;
+	background-color:#0000FF;
+}
+
+.header_title{
+	float: right;
+}
+
+.project{
+	border: 2px solid #0000FF;
+	margin: 10px;
+}
+
+p{
+	margin:0;
+}
+
+@media screen and (max-width: 348px) {
+	.header_logo {
+    	max-width: 100px;
+    	max-height: 100px;
+    	width:20%;
+    	height:20%;
+  	}
+
+	.header_title{
+  		font-size: 0.7em;
+  		margin-top: 2px;
+  	}
+
+  	.header_img{
+  		height: 100%
+  	}
+
+  	figcaption{
+		font-size:0.75em;
+	}
+  
+}
+
+@media screen and (max-width: 610px) {
+  
+	.header_logo {
+    	max-width: 300px;
+    	width:20%;
+  	}
+
+  	.header_title{
+  		font-size: 0.7em;
+  		margin-top: 2px;
+  	}
+
+  	.header_img{
+  		height: 100%
+  	}
+}
+
+@media screen and (min-width: 768px){
+
+	.project{
+  		width: calc((100% - 50px)/2);
+  		margin: 0 10px 10px 0;
+  		border:2px solid #0000FF;
+  	}
+
+  	.project:last-of-type{
+  		margin:auto;
+  		width: 50%;
+  	}
+  
+  	.row {
+  		display: flex;
+  		flex-wrap: wrap;
+  		justify-content: center;
+  	}
+}
+
+@media screen and (min-width: 1020px) {
+	main, header, footer {
+    	margin-left: auto;
+    	margin-right: auto;
+  	}
+  	.project{
+  		width: calc((100% - 60px)/3);
+  		margin: 0 10px 0 0;
+  		border:2px solid #0000FF;
+  	}
+  	.project:last-of-type{
+  		width: calc((100% - 60px)/3);
+  		margin: 0 ;
+  		border:2px solid #0000FF;
+  	}
+  
+  	.row {
+  		display: flex;
+  		flex-wrap: wrap;
+  		justify-content: center;
+ 	}
+
+ 	footer{
+ 		height: 5%;
+ 	}
+ 	.project_image{
+		height: 173px;
+		width:344px;
+	}
+}
